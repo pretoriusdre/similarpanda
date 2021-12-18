@@ -1,0 +1,4 @@
+pandas~=1.3.5
+numpy~=1.21.4
+openpyxl~=3.0.9
+pathlib~=1.0.1
