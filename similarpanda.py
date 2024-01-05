@@ -226,16 +226,18 @@ def get_all_tables_in_excel(filename):
 
 
 def example():
-    example_path = Path('example data')
-    input_filename_old = example_path / 'example-data-old.xlsx'
-    input_filename_new = example_path / 'example-data-new.xlsx'
+    input_folder_path = Path('input')
+    input_filename_old = input_folder_path / 'example-data-old.xlsx'
+    input_filename_new = input_folder_path / 'example-data-new.xlsx'
     all_dfs_old = get_all_tables_in_excel(input_filename_old)
     all_dfs_new = get_all_tables_in_excel(input_filename_new)
 
     # The following table names need to be defined in the Excel file
     df_old = all_dfs_old['Table_data']
     df_new = all_dfs_new['Table_data']
-    output_filename = 'output_differences.xlsx'
+    output_folder_path = Path('output')
+    output_filename = 'example_output_differences.xlsx'
+    output_path = output_folder_path / output_filename
     key_column = 'Part number'
     df_old_title = '5004-PL-2021 Rev 1 (example data)'
     df_new_title = '5004-PL-2021 Rev 2 (example data)'
@@ -248,8 +250,8 @@ def example():
                       key_column = key_column,
                       df_new_title = df_new_title,
                       df_old_title = df_old_title)
-    sp.output_excel(output_filename)
-    os.startfile(output_filename)
+    sp.output_excel(output_path)
+    os.startfile(output_path)
     print("done")
 
 if __name__ == '__main__':
