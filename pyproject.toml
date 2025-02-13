@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "similarpanda"
+version = "0.2.0"
+description = "A tool to compare differences between dataframes and create a differences report in Excel"
+authors = ["Andre <pretorius.dre+github@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pandas = "^2.2.3"
+openpyxl = "^3.1.5"
+ipykernel = "^6.29.5"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
