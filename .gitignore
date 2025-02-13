@@ -6,6 +6,10 @@ output/*
 !input/example-data-old.xlsx
 !output/example_output_differences.xlsx
 
+
+poetry.lock
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
