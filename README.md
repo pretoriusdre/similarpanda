@@ -15,11 +15,11 @@ This is helpful in a workplace setting where you might need to compare different
 ## Installation
 
 ```bash
-pip install openpyxl pandas numpy
+pip install requirements.txt
 ```
-If you are using a package manager such as Poetry, you can create an environment to maintain a separate virtual environment:
+If you are using a package manager such as [Poetry](https://python-poetry.org/docs/#installation), you can create an environment to maintain a separate virtual environment:
 ```bash
-# pip install poetry (if required)
+# If required, follow the guide to install Poetry. Then:
 poetry install
 ```
 
