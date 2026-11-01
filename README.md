@@ -49,9 +49,9 @@ sp.output_excel('differences_report.xlsx')
 
 A Jupyter Notebook interface (`similarpanda_interface.ipynb`) is included, allowing users to:
 
-- Load data from two Excel files.
+- Load data from structured ("CTRL-T") tables in two Excel files.
 - Load data from the clipboard.
-- Generate a comparison report.
+- Generate a comparison report as a new Excel file.
 
 ## Example Output
 
